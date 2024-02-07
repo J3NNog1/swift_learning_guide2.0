@@ -2,6 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:varConst.playground">
+      location = "group:Optionals.playground">
+   </FileRef>
+   <FileRef
+      location = "group:Strings.playground">
+   </FileRef>
+   <FileRef
+      location = "group:StatementsExpressions .playground">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/jenniferjuarez/Desktop/swift_learning_guide2.0/swift_learning_guide2.0/VarConst.playground">
    </FileRef>
 </Workspace>
