@@ -25,6 +25,7 @@ optionalBool = true
 optionalArray = [1, 2, 3, 4, 5]
 
 //4.print two unwrapped optional values
+//b/c optionals can or can't have values to them the only way to find out is by unwrapping the element
 print("\nUnwrapped optional values:")
 if let unwrappedInt = optionalInt {
     print("Unwrapped optionalInt: \(unwrappedInt)")
@@ -37,3 +38,28 @@ if let unwrappedString = optionalString {
 } else {
     print("optionalString is nil")
 }
+
+//5 optional handling techniques
+//5.1 using if-let statement for optional binding
+if let unwrappedDouble = optionalDouble {
+    print("Unwrapped optionalDouble: \(unwrappedDouble)")
+} else {
+    print("optionalDouble is nil")
+}
+
+// 5.2. Using guard statement for optional binding
+func processOptionalBool() {
+    guard let unwrappedBool = optionalBool else {
+        print("optionalBool is nil")
+        return
+    }
+    print("Unwrapped optionalBool: \(unwrappedBool)")
+}
+processOptionalBool()
+
+// 5.3. Using nil-coalescing operator
+let unwrappedArray = optionalArray ?? []
+print("Unwrapped optionalArray: \(unwrappedArray)")
+
+// 5.4. Using forced unwrapping (for demonstration, not recommended)
+print("Forced unwrapping optionalArray: \(optionalArray!)")
