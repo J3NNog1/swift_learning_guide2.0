@@ -17,3 +17,11 @@ print("optionalDouble: \(optionalDouble ?? 0.0)")
 print("optionalBool: \(optionalBool ?? false)")
 print("optionalArray: \(optionalArray ?? [])")
 
+//3. assign value to said optional
+optionalInt = 10
+optionalString = "my name is jenn"
+optionalDouble = 2.22
+optionalBool = true
+optionalArray = [1, 2, 3, 4, 5]
+
+
