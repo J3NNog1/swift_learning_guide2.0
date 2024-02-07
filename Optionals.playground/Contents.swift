@@ -24,4 +24,11 @@ optionalDouble = 2.22
 optionalBool = true
 optionalArray = [1, 2, 3, 4, 5]
 
+//4.print two unwrapped optional values
+print("\nUnwrapped optional values:")
+if let unwrappedInt = optionalInt {
+    print("Unwrapped optionalInt: \(unwrappedInt)")
+} else {
+    print("optionalInt is nil")
+}
 
