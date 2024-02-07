@@ -32,3 +32,8 @@ if let unwrappedInt = optionalInt {
     print("optionalInt is nil")
 }
 
+if let unwrappedString = optionalString {
+    print("unwrapped optionalString: \(unwrappedString)")
+} else {
+    print("optionalString is nil")
+}
